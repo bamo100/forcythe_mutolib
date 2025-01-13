@@ -68,7 +68,7 @@ const Footer = () => {
                     <ul className='flex flex-col gap-2'>
                         {
                             links.map((link) => (
-                                <li className='text-base text-[#B3D0F2] font-medium'>
+                                <li key={link} className='text-base text-[#B3D0F2] font-medium'>
                                     <Link href={`/${link}`}>
                                         {link.charAt(0).toUpperCase() + link.slice(1)}
                                     </Link>

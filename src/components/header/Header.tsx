@@ -54,7 +54,7 @@ const Header = () => {
                         <ul className='flex flex-col'>
                             {
                                 navLinks.map(({label, route}, index) => (
-                                    <li className='w-full py-2.5 text-white'>
+                                    <li key={label} className='w-full py-2.5 text-white'>
                                         <Link 
                                             href={route} 
                                             key={index}
